@@ -32,3 +32,19 @@ export function encodePolybiusSquare(message: string) {
 
     return ciphertext.trim()
 }
+
+export function XOR(a: string, b: string) {
+    if (a.length !== b.length) {
+        return ''
+    }
+
+    let result = ''
+    for (let i = 0; i < a.length; i++) {
+        const x = Number(a.at(i))
+        const y = Number(b.at(i))
+
+        result = result.concat(`${x^y}`)
+    }
+
+    return result
+}
