@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.encodePolybiusSquare = encodePolybiusSquare;
 exports.XOR = XOR;
+exports.default = testLab4;
 const constants_1 = require("../constants");
 /**
  * @param {string} letter - a letter of the alphabet, a space or a number
@@ -42,4 +43,17 @@ function XOR(a, b) {
         result = result.concat(`${x ^ y}`);
     }
     return result;
+}
+function testLab4() {
+    // Task 1
+    console.log(encodePolybiusSquare('ENCRYPT ME 2 DAY'));
+    console.log(encodePolybiusSquare(constants_1.LAST_NAME));
+    // Task 2
+    let a = '1011', b = '0110', c = '0100';
+    console.log(XOR(b, XOR(a, XOR(c, XOR(a, b)))));
+    a = '0101', b = '1110', c = '1101';
+    console.log(XOR(b, XOR(a, XOR(c, XOR(a, b)))));
+    a = '0001', b = '0101', c = '1010';
+    console.log(XOR(b, XOR(a, XOR(c, XOR(a, b)))));
+    // Task 3 is in the report
 }
