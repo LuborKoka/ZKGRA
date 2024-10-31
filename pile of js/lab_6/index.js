@@ -4,7 +4,10 @@ exports.des = des;
 const constants_1 = require("../constants");
 const lab_4_polybius_square_1 = require("../lab_4 polybius square");
 function initialPermutation(text) {
-    return constants_1.IP_TABLE.map(i => text[i - 1]).join('');
+    return constants_1.IP_TABLE.map(i => text.at(i)).join('');
+}
+function finalPermutation(text) {
+    return constants_1.FP_TABLE.map(i => text.at(i)).join('');
 }
 function shiftLeft(key, shift) {
     return key.slice(shift) + key.slice(0, shift);
@@ -23,9 +26,5 @@ function des(plainText, key) {
     newR = (0, lab_4_polybius_square_1.XOR)(L, subKey2.slice(0, L.length));
     L = newL;
     R = newR;
-    return L + R;
+    return R + L;
 }
-const plainText = '1101011100101001011110101111010101110010101110101011010101001111';
-const key = '1010000010000100100001001000100010001000100010001000100010001000';
-const cipherText = des(plainText, key);
-console.log(cipherText);
