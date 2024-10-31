@@ -20,7 +20,7 @@ function shiftRows(table) {
     return result;
 }
 /**
- * performs substitution based on the rijndael table
+ * performs substitution based on the table (that would be forward or inverse sbox)
  */
 function entriesToDecimal(entries, table) {
     return entries.map(entry => {
@@ -33,8 +33,6 @@ function testLab7() {
     // Task 1
     const fnameHexString = textToHex(constants_1.FIRST_NAME);
     const lnameHexString = textToHex(constants_1.LAST_NAME);
-    console.log(fnameHexString);
-    console.log(lnameHexString);
     console.log(entriesToDecimal(fnameHexString.map(hex => Number(`0x${hex}`)), constants_1.FORWARD_SBOX));
     console.log(entriesToDecimal(lnameHexString.map(hex => Number(`0x${hex}`)), constants_1.FORWARD_SBOX));
     // Task 2a
