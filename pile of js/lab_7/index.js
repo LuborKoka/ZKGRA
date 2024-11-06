@@ -49,4 +49,3 @@ function testLab7() {
     });
     console.log(shiftRows(inverseData));
 }
-testLab7();
