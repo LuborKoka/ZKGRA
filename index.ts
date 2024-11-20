@@ -2,6 +2,7 @@ import lab3 from "./lab_3 decoding";
 import lab4 from "./lab_4 polybius square";
 import lab5 from "./lab_5";
 import testLab7 from "./lab_7";
+import testLab8 from "./lab_8";
 
 // Lab 3
 //lab3()
@@ -13,4 +14,7 @@ import testLab7 from "./lab_7";
 //lab5()
 
 // Lab 7
-testLab7()
+//testLab7()
+
+// Lab 8
+testLab8()

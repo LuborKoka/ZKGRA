@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getGcd = getGcd;
 exports.findPrimeRoots = findPrimeRoots;
 exports.generateMappingsTable = generateMappingsTable;
 exports.default = testLab5;
