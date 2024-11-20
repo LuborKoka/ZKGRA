@@ -2,7 +2,7 @@
  * Find greatest common divisor
  * @returns 1 if a and b are coprime
  */
-function getGcd(a: number, b: number): number {
+export function getGcd(a: number, b: number): number {
     if (b === 0) return a;
     return getGcd(b, a % b);
 }
