@@ -80,6 +80,6 @@ function testLab5() {
     ];
     for (const { a, y } of cases) {
         const result = table.find(([A, _, Y]) => A === a && Y === y);
-        console.log(`(a, x) → (y): (${result === null || result === void 0 ? void 0 : result.at(0)}, ${result === null || result === void 0 ? void 0 : result.at(1)}) → (${result === null || result === void 0 ? void 0 : result.at(2)})`);
+        console.log(`(a, x) → (y): (${result?.at(0)}, ${result?.at(1)}) → (${result?.at(2)})`);
     }
 }

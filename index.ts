@@ -3,6 +3,7 @@ import lab4 from "./lab_4 polybius square";
 import lab5 from "./lab_5";
 import testLab7 from "./lab_7";
 import testLab8 from "./lab_8";
+import testLab9 from "./lab_9 hash functions";
 
 // Lab 3
 //lab3()
@@ -17,4 +18,7 @@ import testLab8 from "./lab_8";
 //testLab7()
 
 // Lab 8
-testLab8()
+//testLab8()
+
+// Lab 9
+testLab9()
