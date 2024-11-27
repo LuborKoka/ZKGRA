@@ -33,7 +33,7 @@ function modInverse(e: number, phi: number) {
 
 
 // i have to confess, this is from chatgpt to prevent overflow on the large numbers
-function modExp(base: number, exp: number, mod: number) {
+export function modExp(base: number, exp: number, mod: number) {
     let result = 1
     base = base % mod
 
