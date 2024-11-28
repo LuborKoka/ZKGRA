@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const lab_9_hash_functions_1 = __importDefault(require("./lab_9 hash functions"));
+const lab_10_1 = __importDefault(require("./lab_10"));
 // Lab 3
 //lab3()
 // Lab 4
@@ -15,4 +15,6 @@ const lab_9_hash_functions_1 = __importDefault(require("./lab_9 hash functions")
 // Lab 8
 //testLab8()
 // Lab 9
-(0, lab_9_hash_functions_1.default)();
+//testLab9()
+// Lab 10
+(0, lab_10_1.default)();
