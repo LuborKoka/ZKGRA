@@ -119,5 +119,3 @@ export default function testLab8() {
     console.log(rsaPublicKeys(7, 11))
     console.log(rsaPublicKeys(9, 11))
 }
-
-testLab8()

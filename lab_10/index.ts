@@ -83,5 +83,3 @@ export default function testLab10() {
     const tree = huffmanEncode(letters)
     console.log(tree)
 }
-
-testLab10()
