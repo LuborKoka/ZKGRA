@@ -1,4 +1,5 @@
 import testLab10 from "./lab_10";
+import testLab12 from "./lab_12";
 import lab3 from "./lab_3 decoding";
 import lab4 from "./lab_4 polybius square";
 import lab5 from "./lab_5";
@@ -25,4 +26,7 @@ import testLab9 from "./lab_9 hash functions";
 //testLab9()
 
 // Lab 10
-testLab10()
+//testLab10()
+
+// Lab 11 (or 12 or whatever)
+testLab12()
